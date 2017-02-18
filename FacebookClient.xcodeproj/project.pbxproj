@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		78434FCA1E55FDE300B5B355 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FC91E55FDE300B5B355 /* main.m */; };
 		78434FCD1E55FDE300B5B355 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FCC1E55FDE300B5B355 /* AppDelegate.m */; };
-		78434FD01E55FDE300B5B355 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FCF1E55FDE300B5B355 /* ViewController.m */; };
-		78434FD31E55FDE300B5B355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78434FD11E55FDE300B5B355 /* Main.storyboard */; };
 		78434FD61E55FDE300B5B355 /* FacebookClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78434FD41E55FDE300B5B355 /* FacebookClient.xcdatamodeld */; };
 		78434FD81E55FDE300B5B355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78434FD71E55FDE300B5B355 /* Assets.xcassets */; };
-		78434FDB1E55FDE300B5B355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78434FD91E55FDE300B5B355 /* LaunchScreen.storyboard */; };
 		78434FE61E55FDE300B5B355 /* FacebookClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FE51E55FDE300B5B355 /* FacebookClientTests.m */; };
 		78434FF11E55FDE400B5B355 /* FacebookClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FF01E55FDE400B5B355 /* FacebookClientUITests.m */; };
+		784B287C1E57198D002B7CDB /* FacebookFrameworks in Resources */ = {isa = PBXBuildFile; fileRef = 784B287B1E57198D002B7CDB /* FacebookFrameworks */; };
+		784B28821E572A88002B7CDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B287E1E572A88002B7CDB /* Bolts.framework */; };
+		784B28831E572A88002B7CDB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */; };
+		784B28841E572A88002B7CDB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */; };
+		784B28851E572A88002B7CDB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B28811E572A88002B7CDB /* FBSDKShareKit.framework */; };
+		784B28891E5739F3002B7CDB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28871E5739F3002B7CDB /* LoginViewController.m */; };
+		784B288A1E5739F3002B7CDB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28881E5739F3002B7CDB /* LoginViewController.xib */; };
+		784B288E1E573DBC002B7CDB /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B288C1E573DBC002B7CDB /* AlbumsViewController.m */; };
+		784B288F1E573DBC002B7CDB /* AlbumsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B288D1E573DBC002B7CDB /* AlbumsViewController.xib */; };
+		784B28931E5743F3002B7CDB /* AlbumsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28911E5743F3002B7CDB /* AlbumsTableViewCell.m */; };
+		784B28941E5743F3002B7CDB /* AlbumsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28921E5743F3002B7CDB /* AlbumsTableViewCell.xib */; };
+		784B28981E574FD5002B7CDB /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28961E574FD5002B7CDB /* PhotosViewController.m */; };
+		784B28991E574FD5002B7CDB /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28971E574FD5002B7CDB /* PhotosViewController.xib */; };
+		784B289D1E575643002B7CDB /* PhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B289B1E575643002B7CDB /* PhotosTableViewCell.m */; };
+		784B289E1E575643002B7CDB /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B289C1E575643002B7CDB /* PhotosTableViewCell.xib */; };
+		784B28A21E575FCF002B7CDB /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28A01E575FCF002B7CDB /* PhotoViewController.m */; };
+		784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28A11E575FCF002B7CDB /* PhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +54,8 @@
 		78434FC91E55FDE300B5B355 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78434FCB1E55FDE300B5B355 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78434FCC1E55FDE300B5B355 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		78434FCE1E55FDE300B5B355 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78434FCF1E55FDE300B5B355 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		78434FD21E55FDE300B5B355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78434FD51E55FDE300B5B355 /* FacebookClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FacebookClient.xcdatamodel; sourceTree = "<group>"; };
 		78434FD71E55FDE300B5B355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		78434FDA1E55FDE300B5B355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78434FDC1E55FDE300B5B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78434FE11E55FDE300B5B355 /* FacebookClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78434FE51E55FDE300B5B355 /* FacebookClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookClientTests.m; sourceTree = "<group>"; };
@@ -53,6 +63,29 @@
 		78434FEC1E55FDE400B5B355 /* FacebookClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78434FF01E55FDE400B5B355 /* FacebookClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookClientUITests.m; sourceTree = "<group>"; };
 		78434FF21E55FDE400B5B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784B287B1E57198D002B7CDB /* FacebookFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FacebookFrameworks; sourceTree = "<group>"; };
+		784B287E1E572A88002B7CDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookFrameworks/Bolts.framework; sourceTree = "<group>"; };
+		784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookFrameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookFrameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		784B28811E572A88002B7CDB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookFrameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		784B28861E5739F3002B7CDB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		784B28871E5739F3002B7CDB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		784B28881E5739F3002B7CDB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		784B288B1E573DBC002B7CDB /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
+		784B288C1E573DBC002B7CDB /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
+		784B288D1E573DBC002B7CDB /* AlbumsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumsViewController.xib; sourceTree = "<group>"; };
+		784B28901E5743F3002B7CDB /* AlbumsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsTableViewCell.h; sourceTree = "<group>"; };
+		784B28911E5743F3002B7CDB /* AlbumsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsTableViewCell.m; sourceTree = "<group>"; };
+		784B28921E5743F3002B7CDB /* AlbumsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumsTableViewCell.xib; sourceTree = "<group>"; };
+		784B28951E574FD5002B7CDB /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		784B28961E574FD5002B7CDB /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		784B28971E574FD5002B7CDB /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
+		784B289A1E575643002B7CDB /* PhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewCell.h; sourceTree = "<group>"; };
+		784B289B1E575643002B7CDB /* PhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewCell.m; sourceTree = "<group>"; };
+		784B289C1E575643002B7CDB /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		784B289F1E575FCF002B7CDB /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		784B28A01E575FCF002B7CDB /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		784B28A11E575FCF002B7CDB /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784B28821E572A88002B7CDB /* Bolts.framework in Frameworks */,
+				784B28831E572A88002B7CDB /* FBSDKCoreKit.framework in Frameworks */,
+				784B28841E572A88002B7CDB /* FBSDKLoginKit.framework in Frameworks */,
+				784B28851E572A88002B7CDB /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,10 +120,12 @@
 		78434FBC1E55FDE300B5B355 = {
 			isa = PBXGroup;
 			children = (
+				784B287B1E57198D002B7CDB /* FacebookFrameworks */,
 				78434FC71E55FDE300B5B355 /* FacebookClient */,
 				78434FE41E55FDE300B5B355 /* FacebookClientTests */,
 				78434FEF1E55FDE400B5B355 /* FacebookClientUITests */,
 				78434FC61E55FDE300B5B355 /* Products */,
+				784B287D1E572A88002B7CDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +142,29 @@
 		78434FC71E55FDE300B5B355 /* FacebookClient */ = {
 			isa = PBXGroup;
 			children = (
+				784B28901E5743F3002B7CDB /* AlbumsTableViewCell.h */,
+				784B28911E5743F3002B7CDB /* AlbumsTableViewCell.m */,
+				784B28921E5743F3002B7CDB /* AlbumsTableViewCell.xib */,
+				784B288B1E573DBC002B7CDB /* AlbumsViewController.h */,
+				784B288C1E573DBC002B7CDB /* AlbumsViewController.m */,
+				784B288D1E573DBC002B7CDB /* AlbumsViewController.xib */,
 				78434FCB1E55FDE300B5B355 /* AppDelegate.h */,
 				78434FCC1E55FDE300B5B355 /* AppDelegate.m */,
-				78434FCE1E55FDE300B5B355 /* ViewController.h */,
-				78434FCF1E55FDE300B5B355 /* ViewController.m */,
-				78434FD11E55FDE300B5B355 /* Main.storyboard */,
 				78434FD71E55FDE300B5B355 /* Assets.xcassets */,
-				78434FD91E55FDE300B5B355 /* LaunchScreen.storyboard */,
-				78434FDC1E55FDE300B5B355 /* Info.plist */,
 				78434FD41E55FDE300B5B355 /* FacebookClient.xcdatamodeld */,
+				78434FDC1E55FDE300B5B355 /* Info.plist */,
+				784B28861E5739F3002B7CDB /* LoginViewController.h */,
+				784B28871E5739F3002B7CDB /* LoginViewController.m */,
+				784B28881E5739F3002B7CDB /* LoginViewController.xib */,
+				784B289A1E575643002B7CDB /* PhotosTableViewCell.h */,
+				784B289B1E575643002B7CDB /* PhotosTableViewCell.m */,
+				784B289C1E575643002B7CDB /* PhotosTableViewCell.xib */,
+				784B28951E574FD5002B7CDB /* PhotosViewController.h */,
+				784B28961E574FD5002B7CDB /* PhotosViewController.m */,
+				784B28971E574FD5002B7CDB /* PhotosViewController.xib */,
+				784B289F1E575FCF002B7CDB /* PhotoViewController.h */,
+				784B28A01E575FCF002B7CDB /* PhotoViewController.m */,
+				784B28A11E575FCF002B7CDB /* PhotoViewController.xib */,
 				78434FC81E55FDE300B5B355 /* Supporting Files */,
 			);
 			path = FacebookClient;
@@ -141,6 +194,17 @@
 				78434FF21E55FDE400B5B355 /* Info.plist */,
 			);
 			path = FacebookClientUITests;
+			sourceTree = "<group>";
+		};
+		784B287D1E572A88002B7CDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784B287E1E572A88002B7CDB /* Bolts.framework */,
+				784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */,
+				784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */,
+				784B28811E572A88002B7CDB /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,9 +316,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78434FDB1E55FDE300B5B355 /* LaunchScreen.storyboard in Resources */,
+				784B288A1E5739F3002B7CDB /* LoginViewController.xib in Resources */,
+				784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */,
+				784B28941E5743F3002B7CDB /* AlbumsTableViewCell.xib in Resources */,
+				784B287C1E57198D002B7CDB /* FacebookFrameworks in Resources */,
+				784B28991E574FD5002B7CDB /* PhotosViewController.xib in Resources */,
 				78434FD81E55FDE300B5B355 /* Assets.xcassets in Resources */,
-				78434FD31E55FDE300B5B355 /* Main.storyboard in Resources */,
+				784B288F1E573DBC002B7CDB /* AlbumsViewController.xib in Resources */,
+				784B289E1E575643002B7CDB /* PhotosTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,10 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784B289D1E575643002B7CDB /* PhotosTableViewCell.m in Sources */,
+				784B28891E5739F3002B7CDB /* LoginViewController.m in Sources */,
+				784B28931E5743F3002B7CDB /* AlbumsTableViewCell.m in Sources */,
 				78434FD61E55FDE300B5B355 /* FacebookClient.xcdatamodeld in Sources */,
-				78434FD01E55FDE300B5B355 /* ViewController.m in Sources */,
+				784B28981E574FD5002B7CDB /* PhotosViewController.m in Sources */,
 				78434FCD1E55FDE300B5B355 /* AppDelegate.m in Sources */,
+				784B28A21E575FCF002B7CDB /* PhotoViewController.m in Sources */,
 				78434FCA1E55FDE300B5B355 /* main.m in Sources */,
+				784B288E1E573DBC002B7CDB /* AlbumsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,25 +390,6 @@
 			targetProxy = 78434FED1E55FDE400B5B355 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		78434FD11E55FDE300B5B355 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78434FD21E55FDE300B5B355 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		78434FD91E55FDE300B5B355 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78434FDA1E55FDE300B5B355 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		78434FF31E55FDE400B5B355 /* Debug */ = {
@@ -432,7 +487,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U5PJN58KSH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookFrameworks",
+				);
 				INFOPLIST_FILE = FacebookClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Igor.FacebookClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +504,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U5PJN58KSH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookFrameworks",
+				);
 				INFOPLIST_FILE = FacebookClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Igor.FacebookClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +585,7 @@
 				78434FF71E55FDE400B5B355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78434FF81E55FDE400B5B355 /* Build configuration list for PBXNativeTarget "FacebookClientTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +594,7 @@
 				78434FFA1E55FDE400B5B355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78434FFB1E55FDE400B5B355 /* Build configuration list for PBXNativeTarget "FacebookClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +603,7 @@
 				78434FFD1E55FDE400B5B355 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
