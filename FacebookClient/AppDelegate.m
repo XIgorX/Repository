@@ -18,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //[GMSServices provideAPIKey:@"AIzaSyDkToawnBXjO1RLkmfce1brKFebMICsUmE"];
+    
     [[FBSDKApplicationDelegate sharedInstance] application:application
 didFinishLaunchingWithOptions:launchOptions];
     
@@ -34,6 +37,7 @@ didFinishLaunchingWithOptions:launchOptions];
     
     [self.window setRootViewController: self.nav];
     [self.window makeKeyAndVisible];
+    
     
     return YES;
 }

@@ -14,5 +14,7 @@
     
 @property (retain, nonatomic) NSArray *albumsData;
 @property (retain, nonatomic) NSMutableArray *coverPaths;
-    
+
+@property (retain, nonatomic) NSMutableArray *albumsOffline;
+
 @end

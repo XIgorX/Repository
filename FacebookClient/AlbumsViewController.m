@@ -8,7 +8,7 @@
 
 #import <FBSDKCoreKit/FBSDKAccessToken.h>
 #import <FBSDKCoreKit/FBSDKGraphRequest.h>
-#import <FBSDKLoginKit/FBSDKLoginManager.h>
+//#import <FBSDKLoginKit/FBSDKLoginManager.h>
 
 #import "AlbumsViewController.h"
 #import "AlbumsTableViewCell.h"
@@ -24,11 +24,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+    //FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     
-    [loginManager logInWithReadPermissions:@[@"public_profile", @"email", @"user_friends", @"user_photos"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error)
-     
-     {
+    //[loginManager logInWithReadPermissions:@[@"public_profile", @"email", @"user_friends", @"user_photos"] fromViewController:self handler:^(FBSDKLoginManagerLoginResult *result, NSError *error)
+    
+     //{
+    
          [[[FBSDKGraphRequest alloc]
            initWithGraphPath:@"me/albums"
            parameters: @{@"fields": @"id, name, cover_photo"}
@@ -39,8 +40,10 @@
                   //  NSLog("%@",result);
                   
                   self.albumsData = [result valueForKey:@"data"];
-                  
                   self.coverPaths = [NSMutableArray array];
+                  
+                  self.albumsOffline = [NSMutableArray array];
+                  
                   for (int i=0; i<[self.albumsData count]; i++)
                   {
                       [self.coverPaths addObject:@""];
@@ -56,25 +59,46 @@
                                
                                self.coverPaths[i] = [result valueForKey:@"source"];
                                
-                               [self.tableView reloadData];
+                               //[self.tableView reloadData];
                                
+                               //saving to cash
+                               
+                               NSURL *coverURL = [NSURL URLWithString:self.coverPaths[i]];
+                               UIImage *coverImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:coverURL]];
+                               
+                               //saving image to file
+                               
+                               NSData *pngData = UIImagePNGRepresentation(coverImage);
+                               
+                               NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                               NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+                               NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%d.png",i]]; //Add the file name
+                               [pngData writeToFile:filePath atomically:YES]; //Write the file
+                               
+                               NSDictionary *album = @{
+                                                          @"id" : [[self.albumsData objectAtIndex:i] valueForKey:@"name"],                                                   @"label" : [[self.albumsData objectAtIndex:i] valueForKey:@"name"],
+                                                       };
+                               
+                               [self.albumsOffline addObject:album];
+                               
+                               // pointer to standart user defaults
+                               NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+
+                               [defaults setObject :self.albumsOffline forKey:@"albums"];
+                               
+                               // do not forget to save changes
+                               [defaults synchronize];
                            }
                            
                        }];
                   }
                   
-                  //name = [data valueForKey:@"name"];
-                  
-                  //ids = [data valueForKey:@"id"];
-                  
-                  
-                  //[self.tableView reloadData];
-                  
-                  
               }
               
           }];
-    }];
+    
+        [self.tableView reloadData];
+    //}];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,9 +116,17 @@
     
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.albumsData count];
+    if (self.albumsData)
+        return [self.albumsData count];
+    else
+    {
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        self.albumsOffline = [defaults objectForKey:@"albums"];
+        
+        return [self.albumsOffline count];
+    }
 }
-    
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 100;
@@ -115,19 +147,48 @@
         cell = [[AlbumsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.label.text = [[self.albumsData objectAtIndex:indexPath.row] valueForKey:@"name"];
     
-    NSURL *coverURL = [NSURL URLWithString:self.coverPaths[indexPath.row]];
-    [cell.picture setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:coverURL]]];
+    if (self.albumsData)
+    {
+        cell.label.text = [[self.albumsData objectAtIndex:indexPath.row] valueForKey:@"name"];
+    
+        NSURL *coverURL = [NSURL URLWithString:self.coverPaths[indexPath.row]];
+        [cell.picture setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:coverURL]]];
+    }
+    else
+    {
+        NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+        self.albumsOffline = [defaults objectForKey:@"albums"];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsPath = [paths objectAtIndex:0];
+        NSString *imagePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%ld.png",indexPath.row]];
+        
+        NSData *pngData = [NSData dataWithContentsOfFile:imagePath];
+        UIImage *image = [UIImage imageWithData:pngData];
+        
+        cell.label.text = [self.albumsOffline[indexPath.row] valueForKey:@"label"];
+        cell.picture.image = image;
+        
+    }
+    
     
     return cell;
-    
 }
     
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PhotosViewController *partitionViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" albumID:[[self.albumsData objectAtIndex:indexPath.row] valueForKey:@"id"] bundle:nil];
-    [self.navigationController pushViewController:partitionViewController animated:YES];
+    if (self.albumsData)
+    {
+        PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" albumID:[[self.albumsData         objectAtIndex:indexPath.row] valueForKey:@"id"] bundle:nil];
+        [self.navigationController pushViewController:photosViewController animated:YES];
+    }
+    else
+    {
+        PhotosViewController *photosViewController = [[PhotosViewController alloc] initWithNibName:@"PhotosViewController" albumID:[[self.albumsOffline         objectAtIndex:indexPath.row] valueForKey:@"id"] bundle:nil];
+        [self.navigationController pushViewController:photosViewController animated:YES];
+    }
+    
 }
     
 /*

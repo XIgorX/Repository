@@ -10,4 +10,12 @@
 
 @interface PhotoViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *photo;
+
+@property (retain, nonatomic) NSString *photoID;
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil photoID:(NSString *)photoID bundle:(NSBundle *)nibBundleOrNil;
+
+- (IBAction)buttonPhoto_Click:(id)sender;
+
 @end

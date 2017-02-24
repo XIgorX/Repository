@@ -14,7 +14,9 @@
    
 @property (retain, nonatomic) NSString *albumID;
 @property (retain, nonatomic) NSArray *photosData;
-    
+
+@property (retain, nonatomic) NSMutableArray *photosDataOffline;
+
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil albumID:(NSString *)albumID bundle:(NSBundle *)nibBundleOrNil;
 
 @end

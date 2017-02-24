@@ -13,8 +13,9 @@
 		78434FD81E55FDE300B5B355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78434FD71E55FDE300B5B355 /* Assets.xcassets */; };
 		78434FE61E55FDE300B5B355 /* FacebookClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FE51E55FDE300B5B355 /* FacebookClientTests.m */; };
 		78434FF11E55FDE400B5B355 /* FacebookClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78434FF01E55FDE400B5B355 /* FacebookClientUITests.m */; };
+		78456FD31E58F78E00B2C9C6 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78456FD11E58F78E00B2C9C6 /* MapViewController.m */; };
+		78456FD41E58F78E00B2C9C6 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78456FD21E58F78E00B2C9C6 /* MapViewController.xib */; };
 		784B287C1E57198D002B7CDB /* FacebookFrameworks in Resources */ = {isa = PBXBuildFile; fileRef = 784B287B1E57198D002B7CDB /* FacebookFrameworks */; };
-		784B28821E572A88002B7CDB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B287E1E572A88002B7CDB /* Bolts.framework */; };
 		784B28831E572A88002B7CDB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */; };
 		784B28841E572A88002B7CDB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */; };
 		784B28851E572A88002B7CDB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784B28811E572A88002B7CDB /* FBSDKShareKit.framework */; };
@@ -30,6 +31,8 @@
 		784B289E1E575643002B7CDB /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B289C1E575643002B7CDB /* PhotosTableViewCell.xib */; };
 		784B28A21E575FCF002B7CDB /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28A01E575FCF002B7CDB /* PhotoViewController.m */; };
 		784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28A11E575FCF002B7CDB /* PhotoViewController.xib */; };
+		7873F0001E5FF2F100AD4EDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7873EFFF1E5FF2F100AD4EDF /* MapKit.framework */; };
+		78ED2E0C1E5CC91700AB096B /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 78ED2E0B1E5CC91700AB096B /* podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +66,10 @@
 		78434FEC1E55FDE400B5B355 /* FacebookClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78434FF01E55FDE400B5B355 /* FacebookClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookClientUITests.m; sourceTree = "<group>"; };
 		78434FF21E55FDE400B5B355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78456FD01E58F78E00B2C9C6 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		78456FD11E58F78E00B2C9C6 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		78456FD21E58F78E00B2C9C6 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		784B287B1E57198D002B7CDB /* FacebookFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FacebookFrameworks; sourceTree = "<group>"; };
-		784B287E1E572A88002B7CDB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookFrameworks/Bolts.framework; sourceTree = "<group>"; };
 		784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookFrameworks/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookFrameworks/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		784B28811E572A88002B7CDB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookFrameworks/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -86,6 +91,11 @@
 		784B289F1E575FCF002B7CDB /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		784B28A01E575FCF002B7CDB /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		784B28A11E575FCF002B7CDB /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		7873EFF61E5FF07F00AD4EDF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = FacebookFrameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		7873EFF81E5FF20B00AD4EDF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookFrameworks/Bolts.framework; sourceTree = "<group>"; };
+		7873EFFD1E5FF2BA00AD4EDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7873EFFF1E5FF2F100AD4EDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		78ED2E0B1E5CC91700AB096B /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784B28821E572A88002B7CDB /* Bolts.framework in Frameworks */,
 				784B28831E572A88002B7CDB /* FBSDKCoreKit.framework in Frameworks */,
+				7873F0001E5FF2F100AD4EDF /* MapKit.framework in Frameworks */,
 				784B28841E572A88002B7CDB /* FBSDKLoginKit.framework in Frameworks */,
 				784B28851E572A88002B7CDB /* FBSDKShareKit.framework in Frameworks */,
 			);
@@ -120,6 +130,7 @@
 		78434FBC1E55FDE300B5B355 = {
 			isa = PBXGroup;
 			children = (
+				78ED2E0B1E5CC91700AB096B /* podfile */,
 				784B287B1E57198D002B7CDB /* FacebookFrameworks */,
 				78434FC71E55FDE300B5B355 /* FacebookClient */,
 				78434FE41E55FDE300B5B355 /* FacebookClientTests */,
@@ -156,6 +167,9 @@
 				784B28861E5739F3002B7CDB /* LoginViewController.h */,
 				784B28871E5739F3002B7CDB /* LoginViewController.m */,
 				784B28881E5739F3002B7CDB /* LoginViewController.xib */,
+				78456FD01E58F78E00B2C9C6 /* MapViewController.h */,
+				78456FD11E58F78E00B2C9C6 /* MapViewController.m */,
+				78456FD21E58F78E00B2C9C6 /* MapViewController.xib */,
 				784B289A1E575643002B7CDB /* PhotosTableViewCell.h */,
 				784B289B1E575643002B7CDB /* PhotosTableViewCell.m */,
 				784B289C1E575643002B7CDB /* PhotosTableViewCell.xib */,
@@ -199,7 +213,10 @@
 		784B287D1E572A88002B7CDB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				784B287E1E572A88002B7CDB /* Bolts.framework */,
+				7873EFFF1E5FF2F100AD4EDF /* MapKit.framework */,
+				7873EFFD1E5FF2BA00AD4EDF /* AVFoundation.framework */,
+				7873EFF81E5FF20B00AD4EDF /* Bolts.framework */,
+				7873EFF61E5FF07F00AD4EDF /* GoogleMapsBase.framework */,
 				784B287F1E572A88002B7CDB /* FBSDKCoreKit.framework */,
 				784B28801E572A88002B7CDB /* FBSDKLoginKit.framework */,
 				784B28811E572A88002B7CDB /* FBSDKShareKit.framework */,
@@ -276,6 +293,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = U5PJN58KSH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					78434FE01E55FDE300B5B355 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -318,8 +340,10 @@
 			files = (
 				784B288A1E5739F3002B7CDB /* LoginViewController.xib in Resources */,
 				784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */,
+				78ED2E0C1E5CC91700AB096B /* podfile in Resources */,
 				784B28941E5743F3002B7CDB /* AlbumsTableViewCell.xib in Resources */,
 				784B287C1E57198D002B7CDB /* FacebookFrameworks in Resources */,
+				78456FD41E58F78E00B2C9C6 /* MapViewController.xib in Resources */,
 				784B28991E574FD5002B7CDB /* PhotosViewController.xib in Resources */,
 				78434FD81E55FDE300B5B355 /* Assets.xcassets in Resources */,
 				784B288F1E573DBC002B7CDB /* AlbumsViewController.xib in Resources */,
@@ -355,6 +379,7 @@
 				784B28981E574FD5002B7CDB /* PhotosViewController.m in Sources */,
 				78434FCD1E55FDE300B5B355 /* AppDelegate.m in Sources */,
 				784B28A21E575FCF002B7CDB /* PhotoViewController.m in Sources */,
+				78456FD31E58F78E00B2C9C6 /* MapViewController.m in Sources */,
 				78434FCA1E55FDE300B5B355 /* main.m in Sources */,
 				784B288E1E573DBC002B7CDB /* AlbumsViewController.m in Sources */,
 			);
