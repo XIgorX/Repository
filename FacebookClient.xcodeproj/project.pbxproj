@@ -32,7 +32,6 @@
 		784B28A21E575FCF002B7CDB /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784B28A01E575FCF002B7CDB /* PhotoViewController.m */; };
 		784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784B28A11E575FCF002B7CDB /* PhotoViewController.xib */; };
 		7873F0001E5FF2F100AD4EDF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7873EFFF1E5FF2F100AD4EDF /* MapKit.framework */; };
-		78ED2E0C1E5CC91700AB096B /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 78ED2E0B1E5CC91700AB096B /* podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,6 @@
 		7873EFF81E5FF20B00AD4EDF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookFrameworks/Bolts.framework; sourceTree = "<group>"; };
 		7873EFFD1E5FF2BA00AD4EDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7873EFFF1E5FF2F100AD4EDF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		78ED2E0B1E5CC91700AB096B /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +128,6 @@
 		78434FBC1E55FDE300B5B355 = {
 			isa = PBXGroup;
 			children = (
-				78ED2E0B1E5CC91700AB096B /* podfile */,
 				784B287B1E57198D002B7CDB /* FacebookFrameworks */,
 				78434FC71E55FDE300B5B355 /* FacebookClient */,
 				78434FE41E55FDE300B5B355 /* FacebookClientTests */,
@@ -340,7 +337,6 @@
 			files = (
 				784B288A1E5739F3002B7CDB /* LoginViewController.xib in Resources */,
 				784B28A31E575FCF002B7CDB /* PhotoViewController.xib in Resources */,
-				78ED2E0C1E5CC91700AB096B /* podfile in Resources */,
 				784B28941E5743F3002B7CDB /* AlbumsTableViewCell.xib in Resources */,
 				784B287C1E57198D002B7CDB /* FacebookFrameworks in Resources */,
 				78456FD41E58F78E00B2C9C6 /* MapViewController.xib in Resources */,
